@@ -58,22 +58,24 @@
           <h2 class="c1-contact-title">Contattaci</h2>
           <p class="c1-contact-subtitle">Hai bisogno di un preventivo o vuoi maggiori informazioni sui nostri servizi? Compila il modulo e ti ricontatteremo al più presto.</p>
 
-          <form action="#" method="post" class="c1-contact-form">
+          <form id="contactform" action="https://api.web3forms.com/submit" method="post" class="c1-contact-form">
+            <input type="hidden" name="access_key" value="01e96ad1-7e1b-4234-8a84-eb907d5b94a8" />
+            <input type="hidden" name="from_name" value="SITO ROYALE GARAGE" />
             <div class="c1-contact-left">
               <div class="c1-form-group">
-                <input type="text" id="c1_contact_name" class="c1-form-control" placeholder="Nome" />
+                <input type="text" id="c1_contact_name" class="c1-form-control" name="name" placeholder="Nome" required />
               </div>
               <div class="c1-form-group">
-                <input type="email" id="c1_contact_email" class="c1-form-control" placeholder="Email" />
+                <input type="email" id="c1_contact_email" class="c1-form-control" name="email" placeholder="Email" required />
               </div>
               <div class="c1-form-group">
-                <input type="text" id="c1_contact_subject" class="c1-form-control" placeholder="Oggetto" />
+                <input type="text" id="c1_contact_subject" class="c1-form-control" name="subject" placeholder="Oggetto" required />
               </div>
             </div>
 
             <div class="c1-contact-right">
               <div class="c1-form-group">
-                <textarea id="c1_contact_message" class="c1-form-control" rows="6" placeholder="Messaggio"></textarea>
+                <textarea id="c1_contact_message" class="c1-form-control" rows="6" name="message" placeholder="Messaggio"></textarea>
               </div>
             </div>
 
@@ -164,7 +166,7 @@
                   />
                 </svg>
               </a>
-              <a href="mailto:info@yourdomain.com" class="social-link" aria-label="Email">
+              <a href="mailto:u7700974735@gmail.com?subject=Messagio%20dal%20sito%20Royal%20Garage" class="social-link" aria-label="Email">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.8l8 6.2 8-6.2V18H4z" />
                 </svg>
@@ -186,6 +188,11 @@
     <script defer src="js/jquery.flexslider-min.js"></script>
     <!-- FlexSlider -->
     <script>
+      window.onload = function () {
+        // Reset the form fields when the page loads
+        document.getElementById("contactform").reset();
+      };
+
       $(window).load(function () {
         $(".flexslider").flexslider({
           animation: "slide",
@@ -283,3 +290,11 @@
     </script>
   </body>
 </html>
+
+<!-- <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="01e96ad1-7e1b-4234-8a84-eb907d5b94a8">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form> -->

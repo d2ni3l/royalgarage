@@ -1,5 +1,3 @@
-
-
-// email
+to do
 // put logo somewhare in home header (make more beutiful)
-// fonts
+

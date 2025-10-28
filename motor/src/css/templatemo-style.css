@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /*
- 
 Motor Template
 
 http://www.templatemo.com/tm-463-motor
@@ -7,7 +8,7 @@ http://www.templatemo.com/tm-463-motor
 */
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", "Arial Narrow", Arial, sans-serif, sans-serif;
 }
 
 .blue {
@@ -1857,11 +1858,6 @@ textarea.c1-form-control {
   }
 }
 
-
-
-
-
-
 .whatsapp-section {
   background-color: #030b54;
   color: white;
@@ -1928,5 +1924,5 @@ textarea.c1-form-control {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: background-color 0.3s ease
+  transition: background-color 0.3s ease;
 }
